@@ -32,6 +32,16 @@ class Student{
         avg=sum/4;
         return avg;
     }
+    setName(tenInput){
+        this.ten= tenInput
+    }
+    compareAvg(student){
+        if(hs1.tinhdiemTB()>student.tinhdiemTB()){
+            return hs1.thongtin()
+        }else {
+            return student.thongtin()
+        }
+    }
 }
 let hs1= new Student("Huy",23,[5,6,7,8]);
 let hs2= new Student("Phú",21,[7,8,9,10]);
@@ -39,20 +49,23 @@ document.write(`${hs1.thongtin()}<br>`);
 document.write(`Điểm trung bình: ${hs1.tinhdiemTB()} <br>`);
 document.write(`${hs2.thongtin()}`);
 document.write(` <br> Điểm trung bình: ${hs2.tinhdiemTB()}<br>`);
+hs1.setName("Hồng");
+document.write(hs1.thongtin());
+let hs3= new Student("Bình",22,[10,10,10,10])
+document.write(hs1.compareAvg(hs3))
 
+// if(hs1.tinhdiemTB()>hs2.tinhdiemTB()){
+    // document.write(`Điểm trung bình của học hs1 cao hơn <br>`)
+    // document.write(`${hs1.thongtin()}<br>`)
+    // document.write(`Điểm trung bình: ${hs1.tinhdiemTB()} <br>`)
 
-
-if(hs1.tinhdiemTB()>hs2.tinhdiemTB()){
-    document.write(`Điểm trung bình của học hs1 cao hơn <br>`)
-    document.write(`${hs1.thongtin()}<br>`)
-    document.write(`Điểm trung bình: ${hs1.tinhdiemTB()} <br>`)
-}else if(hs1.tinhdiemTB()===hs2.tinhdiemTB()){
-    document.write("Điểm trung bình 2 bạn hs bằng nhau")
-}else {
-    document.write(`Điểm trung bình của học hs2 cao hơn <br>`)
-    document.write(`${hs2.thongtin()}`)
-    document.write(` <br> Điểm trung bình: ${hs2.tinhdiemTB()}<br>`)
-}
+// }else if(hs1.tinhdiemTB()===hs2.tinhdiemTB()){
+//     document.write("Điểm trung bình 2 bạn hs bằng nhau")
+// }else {
+//     document.write(`Điểm trung bình của học hs2 cao hơn <br>`)
+//     document.write(`${hs2.thongtin()}`)
+//     document.write(` <br> Điểm trung bình: ${hs2.tinhdiemTB()}<br>`)
+// }
 </script>
 </body>
 </html>

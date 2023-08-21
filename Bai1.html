@@ -33,19 +33,25 @@
         tinhchuvi(){
              this.chuvi=(this.chieudai+this.chieurong)*2
         }
+        getInfo(){
+            let data =`Hình chữ nhật có chiều dài :${this.chieudai} và chiều rộng :${this.chieurong},diện tích là : ${this.tinhdientich()},chu vi là: ${this.tinhchuvi()}`
+            return data
+        }
+
     }
     let hcn1= new Rectangle(5,7)
     let hcn2= new Rectangle(9,12)
     let hcn3= new Rectangle(21,28)
-    hcn1.tinhdientich()
-    hcn1.tinhchuvi()
-    console.log(hcn1)
-    hcn2.tinhdientich()
-    hcn2.tinhchuvi()
-    console.log(hcn2)
-    hcn3.tinhdientich()
-    hcn3.tinhchuvi()
-    console.log(hcn3)
+    console.log(hcn1.getInfo())
+    // hcn1.tinhdientich()
+    // hcn1.tinhchuvi()
+    // console.log(hcn1)
+    // hcn2.tinhdientich()
+    // hcn2.tinhchuvi()
+    // console.log(hcn2)
+    // hcn3.tinhdientich()
+    // hcn3.tinhchuvi()
+    // console.log(hcn3)
 
 
     document.write(`Chiều dài hcn1 :${hcn1.chieudai} và chiều rộng hcn2 :${hcn1.chieurong}`)

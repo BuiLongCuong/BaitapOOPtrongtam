@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class temperature{
+        DoC
+        constructor(DoCInput) {
+            this.DoC=DoCInput;
+        }
+         chuyenDoiCtoK(){
+           return this.DoC+273.15
+        }
+        chuyenDoiCtoF(){
+            return this.DoC*1.8+32
+        }
+    }
+let a= new temperature(25)
+    console.log(`${a.DoC}C= ${a.chuyenDoiCtoK()}K`)
+    console.log(`${a.DoC}C= ${a.chuyenDoiCtoF()}F`)
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--"- Thực hành và làm các quizzz-->
+<!--    Yêu cầu vẽ UML mọi bài OOP-->
+<!--    Link vẽ: https://app.diagrams.net/-->
+<!--    1. Hoàn thành bài tập: Viết một lớp các đối tượng hình chữ nhật lấy tên là Rectangle, mỗi hình chữ nhật đều có những đặc tính sau:-->
+<!--    + Có thông số chiều dài (int).-->
+<!--    + Có thông số chiều rộng (int).-->
+<!--    + Có tính năng tính diện tích.-->
+<!--    + Có tính năng tính chu vi.-->
+<!--    => Tạo một đối tượng HCN-->
+<!--    + Hiển thị thông tin hình chữ nhât lên web-->
+<!--    + Thay đổi chiều dài và chiều rộng của hình chữ nhật-->
+<!--    +  In ra màn hình diện tích và chu vi của hình chữ nhật đó.-->
+<script>
+    class Rectangle{
+        chieudai
+        chieurong
+        dientich
+        chuvi
+        constructor(chieudaiInput,chieurongInput) {
+            this.chieudai=chieudaiInput;
+            this.chieurong=chieurongInput;
+        }
+        tinhdientich(){
+            return  this.dientich=this.chieudai*this.chieurong
+        }
+        tinhchuvi(){
+             this.chuvi=(this.chieudai+this.chieurong)*2
+        }
+    }
+    let hcn1= new Rectangle(5,7)
+    let hcn2= new Rectangle(9,12)
+    let hcn3= new Rectangle(21,28)
+    hcn1.tinhdientich()
+    hcn1.tinhchuvi()
+    console.log(hcn1)
+    hcn2.tinhdientich()
+    hcn2.tinhchuvi()
+    console.log(hcn2)
+    hcn3.tinhdientich()
+    hcn3.tinhchuvi()
+    console.log(hcn3)
+
+
+    document.write(`Chiều dài hcn1 :${hcn1.chieudai} và chiều rộng hcn2 :${hcn1.chieurong}`)
+    document.write(`<br> Diện tích hcn1: ${hcn1.tinhdientich()}`)
+    document.write(`<br> Chu vi hcn1: ${hcn1.chuvi}<br>`)
+    document.write(`Chiều dài hcn2 :${hcn2.chieudai} và chiều rộng hcn2 :${hcn2.chieurong}`)
+    document.write(`<br> Diện tích hcn2: ${hcn2.dientich}`)
+    document.write(`<br> Chu vi hcn2: ${hcn2.chuvi}<br>`)
+    document.write(`Chiều dài hcn3 :${hcn3.chieudai} và chiều rộng hcn3 :${hcn3.chieurong}`)
+    document.write(`<br> Diện tích hcn3: ${hcn3.dientich}`)
+    document.write(`<br> Chu vi hcn3: ${hcn3.chuvi}`)
+</script>
+</body>
+</html>
